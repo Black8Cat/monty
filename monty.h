@@ -60,6 +60,13 @@ typedef struct bus_s
 }  bus_t;
 extern bus_t bus;
 
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
+void f_stack(stack_t **head, unsigned int counter);
+void free_stack(stack_t *head);
+void addnode(stack_t **head, int n);
+void addqueue(stack_t **head, int n);
+void f_queue(stack_t **head, unsigned int counter);
+
 
 void f_push(stack_t **head, unsigned int number);
 void f_pall(stack_t **head, unsigned int number);
